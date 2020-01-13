@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+  </head>
+  <body>
+      <header>
+        <h1>The Rail</h1>
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <style>
+          form {
+            text-align: center;
+          }
+        </style>
+      </header>
+      <hr>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <hr>
+      <main>
+        <!-- form labels need to be bold -->
+        <form class="" action="index.html" method="post">
+          <b>Name:</b> <input type="text" name="contact-name" value="" required/><br>
+          <b>Email:</b> <input type="text" name="contact-email" value="" required/><br>
+          <b>Phone:</b> <input type="text" name="contact-phone" value="" required/><br>
+          Reason for Inquiry: <select name="reason">
+            <option value="catering">Catering</option>
+            <option value="private-party">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select><br>
+          Additional Information: <textarea name="additional-info" rows="8" cols="80"></textarea><br>
+          Have you been to the restaurant? <input type="radio" name="answer" value="no">No
+          <input type="radio" name="answer" value="yes">Yes<br>
+          Best days to contact you: <input type="checkbox" name="day" value="mon">M
+          <input type="checkbox" name="day" value="tue">T
+          <input type="checkbox" name="day" value="wed">W
+          <input type="checkbox" name="day" value="thu">TH
+          <input type="checkbox" name="day" value="fri">F<br>
+          <input type="submit" value="Send Request"/>
+        </form>
+      </main>
+      <hr>
+      <footer>
+        <p>2040 University Ave SE, Minneapolis, MN, 55104</p>
+        <p>612-203-2039</p>
+      </footer>
+  </body>
+</html>
