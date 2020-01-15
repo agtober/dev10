@@ -1,12 +1,6 @@
 header, footer {
   text-align: center;
 }
-nav a:active {
-  text-decoration: none;
-}
-nav a:hover {
-  font-weight: bold;
-}
 h1 {
   font-family: cursive;
 }
