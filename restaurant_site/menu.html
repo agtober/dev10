@@ -10,6 +10,8 @@ Change the Home link to use an Icon from one of the supported fonts that looks l
   <head>
     <meta charset="utf-8">
     <title>Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
     <style>
       main {
         background-color: lightgrey;
@@ -34,77 +36,85 @@ Change the Home link to use an Icon from one of the supported fonts that looks l
     </style>
   </head>
   <body>
+    
+    <div>
       <header>
         <h1>The Rail</h1>
-        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
       </header>
       <hr>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact Us</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active .octicon-home" href="index.html"><svg width="20" height="18" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8L13 5V1H11V3L8 0L0 8H2L3 13C3 13.55 3.45 14 4 14H12C12.55 14 13 13.55 13 13L14 8H16ZM12 13H9V9H7V13H4L2.81 6.69L8 1.5L13.19 6.69L12 13Z" fill="#1B1F23"/>
+              </svg></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
       </nav>
       <hr>
+    
       <main>
         <!--menu item names have to be larger than the descriptions-->
         <!--menu background has to be a color other than white-->
-        <section id="food">
-          <table>
-            <tr>
-              <td>
+      <div class="container">  
+        <div class="row">
+          <div class="col">
                 <h3>Burger and Fries</h3>
                 <p>An American Classic!
                 Your choice - with or without cheese
                 Pickle, onion, tomato, and lettuce
                 Served with our famous thick cut french fries</p>
                 <p>$7.95</p>
-            </td>
-              <td>
+                </div>
+          <div class="col">
                 <h3>Hot Dog and Chips</h3>
                 <p>An American Classic!
                 Your choice - with or without cheese
                 Pickle, onion, tomato, and lettuce
                 Served with our famous thick cut french fries</p>
                 <p>$7.95</p>
-              </td>
-              <td>
+                </div>
+          <div class="col">
                 <h3>Italian Sausage and Peppers</h3>
                 <p>An American Classic!
                 Your choice - with or without cheese
                 Pickle, onion, tomato, and lettuce
                 Served with our famous thick cut french fries</p>
                 <p>$7.95</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
+                </div>
+        </div>
+        <div class="row">
+          <div class="col">
                 <h3>Tenderloin Sandwich and Chips</h3>
                 <p>An American Classic!
                 Your choice - with or without cheese
                 Pickle, onion, tomato, and lettuce
                 Served with our famous thick cut french fries</p>
                 <p>$7.95</p>
-              </td>
-              <td>
+                </div>
+                <div class="col">
                 <h3>House Salad</h3>
                 <p>An American Classic!
                 Your choice - with or without cheese
                 Pickle, onion, tomato, and lettuce
                 Served with our famous thick cut french fries</p>
                 <p>$7.95</p>
-              </td>
-              <td>
+                </div>
+                <div class="col">
                 <h3>Brisket Sandwich and Fries</h3>
                 <p>An American Classic!
                 Your choice - with or without cheese
                 Pickle, onion, tomato, and lettuce
                 Served with our famous thick cut french fries</p>
                 <p>$7.95</p>
-              </td>
-            </tr>
-          </table>
-        </section>
-        <!-- need to style this table -->
+                </div>
+                </div>
         <section id="beverages">
           <table id="beverage-table">
             <tr>
@@ -115,15 +125,15 @@ Change the Home link to use an Icon from one of the supported fonts that looks l
               <td>$3.00</td>
             </tr>
             <tr>
-              <td>Root Beer</td>
+              <td>Lemonade</td>
               <td>$3.00</td>
             </tr>
             <tr>
-              <td>Root Beer</td>
+              <td>Sweet Tea</td>
               <td>$3.00</td>
             </tr>
             <tr>
-              <td>Root Beer</td>
+              <td>Cola</td>
               <td>$3.00</td>
             </tr>
           </table>
@@ -134,5 +144,7 @@ Change the Home link to use an Icon from one of the supported fonts that looks l
         <p>2040 University Ave SE, Minneapolis, MN, 55104</p>
         <p>612-203-2039</p>
       </footer>
+      </div>
+      </div>
   </body>
 </html>
